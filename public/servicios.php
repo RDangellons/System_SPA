@@ -58,8 +58,8 @@
         }
 
         .brand img {
-            height: 70px;
-            width: 70px;
+            height: 100px;
+            width: 100px;
             object-fit: contain;
             border-radius: 50%;
         }
@@ -250,7 +250,7 @@
             .nav {
                 display: none;
                 position: absolute;
-                top: 60px; /* debajo del header */
+                top: 100px; /* debajo del header */
                 right: 0;
                 left: 0;
                 background: var(--color-header-bg);
@@ -266,7 +266,7 @@
             }
 
             .nav a {
-                padding: 8px 10px;
+                padding: 15px 10px;
             }
         }
     </style>
