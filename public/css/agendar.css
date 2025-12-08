@@ -22,9 +22,10 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
-/* HEADER (igual estilo que index) */
+/* HEADER (igual estilo general) */
 
 header {
     position: sticky;
@@ -78,10 +79,8 @@ header {
 }
 
 .nav a {
-    text-decoration: none;
     padding: 6px 12px;
     border-radius: 999px;
-    color: var(--color-text);
     transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -125,150 +124,172 @@ header {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* LAYOUT PRINCIPAL */
+/* MAIN */
 
 main {
-    max-width: 1100px;
+    max-width: 750px;
     margin: 20px auto 40px auto;
     padding: 0 16px;
 }
 
-/* ENCABEZADO DE PÁGINA */
-
-.encabezado-servicios h2 {
+.encabezado-agendar h2 {
     font-size: 1.8rem;
     color: var(--color-accent);
     margin-bottom: 6px;
 }
 
-.encabezado-servicios p {
+.encabezado-agendar p {
     font-size: 0.95rem;
-    margin-bottom: 18px;
 }
 
-.barra-herramientas {
+/* RESUMEN SERVICIO */
+
+.resumen-servicio {
+    margin-top: 18px;
+    margin-bottom: 16px;
+    background: rgba(226,181,154,0.8);
+    border-radius: 16px;
+    padding: 14px 16px;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+}
+
+.resumen-servicio h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.resumen-servicio .servicio-nombre {
+    font-weight: 600;
+}
+
+.resumen-servicio .servicio-detalle,
+.resumen-servicio .servicio-precio {
+    font-size: 0.9rem;
+}
+
+.oculto {
+    display: none;
+}
+
+/* FORMULARIO */
+
+.formulario-cita {
+    margin-top: 16px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 18px;
+    padding: 18px 16px 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+#form-cita {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
 }
 
-.buscador {
-    flex: 1 1 220px;
+.campo label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
 }
 
-.buscador input {
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"],
+.campo input[type="date"],
+.campo input[type="time"],
+.campo input[type="file"],
+.campo textarea {
     width: 100%;
     padding: 8px 10px;
-    border-radius: 999px;
+    border-radius: 10px;
     border: 1px solid rgba(149,124,98,0.5);
     outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
 }
 
-.buscador input:focus {
+.campo input:focus,
+.campo textarea:focus {
     border-color: var(--color-primary);
 }
 
-.orden {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-}
-
-.orden select {
-    padding: 6px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(149,124,98,0.5);
-    background: #FFEED0;
-}
-
-/* GRID DE SERVICIOS */
-
-.servicios-grid {
+.grupo-fecha-hora {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
 }
 
-.card-servicio {
-    background: rgba(255,255,255,0.7);
-    border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    overflow: hidden;
+.opciones-pago {
     display: flex;
     flex-direction: column;
-}
-
-.card-img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    display: block;
-}
-
-.card-body {
-    padding: 14px 16px 16px;
-}
-
-.card-servicio h3 {
-    margin-bottom: 6px;
-    color: var(--color-accent);
-    font-size: 1.05rem;
-}
-
-.card-servicio p {
+    gap: 4px;
     font-size: 0.9rem;
-    margin: 4px 0;
 }
 
-.card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
+.opciones-pago input {
+    margin-right: 6px;
+}
+
+.ayuda-campo {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-top: 3px;
+}
+
+.aviso-salud p {
     font-size: 0.85rem;
+    background: rgba(255,237,219,0.9);
+    border-radius: 10px;
+    padding: 8px 10px;
 }
 
-.card-meta .duracion {
-    opacity: 0.9;
+.acciones-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
 }
 
-.card-meta .precio {
-    font-weight: 700;
-    color: var(--color-primary);
-}
-
-.card-footer {
-    padding: 0 16px 14px;
-    margin-top: auto;
-}
-
-.btn-agendar {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 8px 12px;
+.btn-primary {
+    padding: 10px 16px;
     border-radius: 999px;
+    border: none;
     background: var(--color-primary);
     color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
     font-weight: 600;
-    transition: background 0.2s ease, transform 0.1s ease;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.16);
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
 }
 
-.btn-agendar:hover {
+.btn-primary:hover {
     background: var(--color-accent);
     transform: translateY(-1px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.2);
 }
 
-.mensaje-estado {
-    text-align: center;
-    margin-top: 18px;
+.btn-ghost {
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    font-weight: 500;
     font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-ghost:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.mensaje-form {
+    margin-top: 6px;
+    font-size: 0.85rem;
 }
 
 /* FOOTER */
@@ -313,12 +334,7 @@ footer {
         padding: 8px 10px;
     }
 
-    .barra-herramientas {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .orden {
-        justify-content: flex-start;
+    .grupo-fecha-hora {
+        grid-template-columns: 1fr;
     }
 }
