@@ -41,7 +41,7 @@
             servicios.forEach(serv => {
                 let imgRuta = (serv.imagen && serv.imagen !== "")
                     ? serv.imagen
-                    : "img/servicio-default.jpg"; // crea esta imagen en /public/img
+                    : "img/default.jpg"; // crea esta imagen en /public/img
 
                 const card = document.createElement("div");
                 card.classList.add("card-servicio");
