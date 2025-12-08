@@ -146,44 +146,6 @@ main {
     margin-bottom: 18px;
 }
 
-.barra-herramientas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
-}
-
-.buscador {
-    flex: 1 1 220px;
-}
-
-.buscador input {
-    width: 100%;
-    padding: 8px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(149,124,98,0.5);
-    outline: none;
-}
-
-.buscador input:focus {
-    border-color: var(--color-primary);
-}
-
-.orden {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-}
-
-.orden select {
-    padding: 6px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(149,124,98,0.5);
-    background: #FFEED0;
-}
 
 /* GRID DE SERVICIOS */
 

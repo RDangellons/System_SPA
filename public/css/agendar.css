@@ -198,9 +198,9 @@ main {
 .campo input[type="tel"],
 .campo input[type="email"],
 .campo input[type="date"],
-.campo input[type="time"],
 .campo input[type="file"],
-.campo textarea {
+.campo textarea,
+.campo select {
     width: 100%;
     padding: 8px 10px;
     border-radius: 10px;
@@ -210,10 +210,10 @@ main {
     font-size: 0.9rem;
 }
 
-.campo input:focus,
-.campo textarea:focus {
+.campo select:focus {
     border-color: var(--color-primary);
 }
+
 
 .grupo-fecha-hora {
     display: grid;

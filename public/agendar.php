@@ -73,16 +73,21 @@ $servicioId = isset($_GET['servicio']) ? (int) $_GET['servicio'] : '';
                 <input type="email" id="correo" name="correo" placeholder="Ej. ana@mail.com">
             </div>
 
-            <div class="grupo-fecha-hora">
-                <div class="campo">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
+                <div class="grupo-fecha-hora">
+    <div class="campo">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+    </div>
 
-                <div class="campo">
-                    <label for="hora">Hora</label>
-                    <input type="time" id="hora" name="hora" required>
-                </div>
+    <div class="campo">
+        <label for="hora">Hora disponible</label>
+        <select id="hora" name="hora" required>
+            <option value="">Selecciona una hora</option>
+            <!-- Las opciones se llenan desde JS -->
+        </select>
+    </div>
+</div>
+
             </div>
 
             <div class="campo">

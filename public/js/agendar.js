@@ -1,3 +1,48 @@
+const selectHora = document.getElementById('hora');
+const inputFecha = document.getElementById('fecha');
+
+// Lista de horarios disponibles que USTEDES manejan
+// Solo edita este arreglo para cambiar horarios o agregar más
+const HORARIOS_DISPONIBLES = [
+    { label: "10:00 am", value: "10:00" },
+    { label: "11:00 am", value: "11:00" },
+    { label: "12:00 pm", value: "12:00" },
+    { label: "1:00 pm",  value: "13:00" },
+    { label: "3:00 pm",  value: "15:00" },
+    { label: "5:00 pm",  value: "17:00" }
+];
+
+// Opcional: desde qué día se puede agendar (hoy en adelante)
+function configurarMinFecha() {
+    if (!inputFecha) return;
+    const hoy = new Date();
+    const yyyy = hoy.getFullYear();
+    const mm = String(hoy.getMonth() + 1).padStart(2, "0");
+    const dd = String(hoy.getDate()).padStart(2, "0");
+    inputFecha.min = `${yyyy}-${mm}-${dd}`;
+}
+
+// Llenar el select de horas con los horarios definidos
+function poblarHoras() {
+    if (!selectHora) return;
+
+    // Mantener la primera opción
+    selectHora.innerHTML = '<option value="">Selecciona una hora</option>';
+
+    HORARIOS_DISPONIBLES.forEach(h => {
+        const opt = document.createElement("option");
+        opt.value = h.value;
+        opt.textContent = h.label;
+        selectHora.appendChild(opt);
+    });
+}
+
+configurarMinFecha();
+poblarHoras();
+
+
+
+
 // ===== MENÚ HAMBURGUESA =====
 const header = document.getElementById('main-header');
 const toggleBtn = document.querySelector('.nav-toggle');
