@@ -38,6 +38,7 @@
             <a href="agendar.php">Agendar cita</a>
             <a href="mi-cuenta.php">Mi cuenta</a>
             <a href="contacto.php">Contacto</a>
+            <a href="../admin/login.php">Administrador</a>
         </nav>
     </div>
 </header>
@@ -76,6 +77,7 @@
                 <p>Sesión completa para liberar tensión y devolverle luz a tu piel.</p>
                 <p class="precio">$599 MXN</p>
                 <p class="duracion">Duración aproximada: 90 min</p>
+
             </div>
             <div class="hero-bubbles">
                 <div class="bubble big"></div>
@@ -166,7 +168,7 @@
 </main>
 
 <footer>
-    <p>© <?php echo date("Y"); ?> Spa Mamá · Todos los derechos reservados</p>
+    <p>© <?php echo date("Y"); ?> Spa LIADOMI · Todos los derechos reservados</p>
 </footer>
 
 <!-- JS de esta página -->

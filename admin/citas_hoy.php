@@ -1,6 +1,6 @@
 <?php
 // admin/citas_hoy.php
-
+require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/../api/db.php';
 require_once __DIR__ . '/../config/db_config.php';
 
@@ -78,7 +78,8 @@ try {
 
             <nav class="top-actions">
                 <a class="btn" href="../public/index.php">Ver sitio</a>
-                <!-- más adelante ponemos login + cerrar sesión -->
+               <a class="btn" href="logout.php">Cerrar sesión</a>
+
             </nav>
         </div>
     </header>
