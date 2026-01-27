@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Spa Mamá</title>
+    <title>Inicio | Masajes</title>
 
     <!-- CSS de esta página -->
     <link rel="stylesheet" href="css/index.css">
@@ -19,8 +19,7 @@
             <!-- Cambia la ruta si tu logo se llama distinto -->
             <img src="img/logo.jpg" alt="Logo Spa Mamá">
             <div class="brand-text">
-                <h1>Spa Mamá</h1>
-                <p>Bienestar, relajación y belleza</p>
+                <h1>Masajes LIDOMI</h1>
             </div>
         </div>
 
@@ -60,10 +59,11 @@
                 <span class="badge">Atención personalizada</span>
             </div>
 
-            <div class="hero-actions">
+            <!-- <div class="hero-actions">
                 <a href="agendar.php" class="btn-primary">Agendar mi cita</a>
                 <a href="servicios.php" class="btn-ghost">Ver servicios</a>
             </div>
+-->
 
             <p class="hero-note">
                 Antes de tu masaje, te pediremos un breve cuestionario de salud para cuidar de ti de forma segura 🧡
