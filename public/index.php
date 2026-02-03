@@ -35,7 +35,7 @@
             <a href="index.php" class="activo">Inicio</a>
             <a href="servicios.php">Servicios</a>
             <a href="agendar.php">Agendar cita</a>
-            <a href="mi-cuenta.php">Mi cuenta</a>
+<!--<a href="mi-cuenta.php">Mi cuenta</a> -->
             <a href="contacto.php">Contacto</a>
             <a href="../admin/login.php">Administrador</a>
         </nav>
@@ -47,14 +47,27 @@
     <section class="hero">
         <div class="hero-text">
             <span class="hero-pill">Spa & Bienestar</span>
-            <h2>Tu refugio de paz en la ciudad</h2>
-            <p class="hero-desc">
-                Masajes relajantes, faciales y rituales de spa pensados para que desconectes del estrés
-                y te regales un momento solo para ti.
-            </p>
+            <h2>Un masaje no es un lujo, Es un bienestar para tu salud.</h2>
+            <!--  PROMOCION DEL MES -->
+        <div class="hero-visual">
+            <div class="hero-card">
+                <span class="hero-tag">Promoción del mes</span>
+                <h3>Masaje relajante + facial hidratante</h3>
+                <p>Sesión completa para liberar tensión y devolverle luz a tu piel.</p>
+                <p class="precio">$599 MXN</p>
+                <p class="duracion">Duración aproximada: 90 min</p>
+            </div>
+
+            <div class="hero-bubbles">
+                <div class="bubble big"></div>
+                <div class="bubble medium"></div>
+                <div class="bubble small"></div>
+            </div>
+        </div>
+    </section>
 
             <div class="hero-badges">
-                <span class="badge">Agenda en línea</span>
+                <span class="badge">Agenda en línea ahora!!</span>
                 <span class="badge">Ambiente relajante</span>
                 <span class="badge">Atención personalizada</span>
             </div>
@@ -70,21 +83,41 @@
             </p>
         </div>
 
-        <div class="hero-visual">
-            <div class="hero-card">
-                <span class="hero-tag">Promoción del mes</span>
-                <h3>Masaje relajante + facial hidratante</h3>
-                <p>Sesión completa para liberar tensión y devolverle luz a tu piel.</p>
-                <p class="precio">$599 MXN</p>
-                <p class="duracion">Duración aproximada: 90 min</p>
+         <!-- SECCIÓN: CÓMO FUNCIONA -->
+    <section class="seccion pasos">
+        <h3 class="seccion-title">¿Cómo funciona?</h3>
+        <p class="seccion-subtitle">
+            Tu bienestar en tres pasos sencillos.
+        </p>
 
+        <div class="pasos-grid">
+            <div class="paso">
+                <span class="paso-num">1</span>
+                <h4>Elige tu servicio</h4>
+                <p>Explora el catálogo, conoce los tiempos y beneficios de cada tratamiento.</p>
             </div>
-            <div class="hero-bubbles">
-                <div class="bubble big"></div>
-                <div class="bubble medium"></div>
-                <div class="bubble small"></div>
+            <div class="paso">
+                <span class="paso-num">2</span>
+                <h4>Agenda tu cita</h4>
+                <p>Selecciona el día y la hora, y llena tu cuestionario de salud.</p>
+            </div>
+            <div class="paso">
+                <span class="paso-num">3</span>
+                <h4>Disfruta tu momento</h4>
+                <p>Llega al spa, respira profundo y permite que  te consintamos.</p>
             </div>
         </div>
+    </section>
+
+      <!-- SECCIÓN: SERVICIOS DESTACADOS (desde la BD) -->
+    <section class="seccion destacados">
+        <h3 class="seccion-title">Servicios destacados</h3>
+        <p class="seccion-subtitle">
+            Los favoritos de nuestras clientas.
+        </p>
+
+        <div id="servicios-destacados" class="servicios-grid"></div>
+        <p id="servicios-msg" class="servicios-msg"></p>
     </section>
 
     <!-- SECCIÓN: BENEFICIOS -->
@@ -118,42 +151,8 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: CÓMO FUNCIONA -->
-    <section class="seccion pasos">
-        <h3 class="seccion-title">¿Cómo funciona?</h3>
-        <p class="seccion-subtitle">
-            Tu bienestar en tres pasos sencillos.
-        </p>
-
-        <div class="pasos-grid">
-            <div class="paso">
-                <span class="paso-num">1</span>
-                <h4>Elige tu servicio</h4>
-                <p>Explora el catálogo, conoce los tiempos y beneficios de cada tratamiento.</p>
-            </div>
-            <div class="paso">
-                <span class="paso-num">2</span>
-                <h4>Agenda tu cita</h4>
-                <p>Selecciona el día y la hora, y llena tu cuestionario de salud.</p>
-            </div>
-            <div class="paso">
-                <span class="paso-num">3</span>
-                <h4>Disfruta tu momento</h4>
-                <p>Llega al spa, respira profundo y permite que nosotras te consintamos.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN: SERVICIOS DESTACADOS (desde la BD) -->
-    <section class="seccion destacados">
-        <h3 class="seccion-title">Servicios destacados</h3>
-        <p class="seccion-subtitle">
-            Los favoritos de nuestras clientas.
-        </p>
-
-        <div id="servicios-destacados" class="servicios-grid"></div>
-        <p id="servicios-msg" class="servicios-msg"></p>
-    </section>
+   
+  
 
     <!-- SECCIÓN: CTA FINAL -->
     <section class="seccion cta-final">

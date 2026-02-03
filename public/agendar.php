@@ -108,6 +108,9 @@ $servicioId = isset($_GET['servicio']) ? (int) $_GET['servicio'] : '';
                 <label for="comprobante">Comprobante de pago (foto o captura)</label>
                 <input type="file" id="comprobante" name="comprobante" accept="image/*,application/pdf">
                 <p class="ayuda-campo">
+                    
+                </p>
+                <p class="ayuda-campo">
                     Puedes enviar la foto del comprobante si realizas la transferencia antes de tu cita.
                 </p>
             </div>
